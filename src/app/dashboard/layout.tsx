@@ -10,8 +10,10 @@ import { AddAnotherMedia } from "@/components/AddAnotherMedia";
 import { RERARegistration } from "@/components/RERARegistration";
 import { LocationInput } from "@/components/LocationInput";
 
-export default function DashboardLayout({}: Readonly<{
-  // children: React.ReactNode;
+export default function DashboardLayout({
+  children,
+}: Readonly<{
+  children?: React.ReactNode; // Optional prop
 }>) {
   return (
     <div className="flex">
@@ -43,6 +45,9 @@ export default function DashboardLayout({}: Readonly<{
           {/* Submit Button */}
           <Button>Submit</Button>
         </div>
+
+        {/* Render children if provided */}
+        {children && <div>{children}</div>}
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+//import { Input } from "@/components/ui/input";
 import Menu from "@/components/Menu";
 import Navbar from "@/components/Navbar";
 import { ProgressSelector } from "@/components/ProgressSelector";
@@ -10,10 +10,8 @@ import { AddAnotherMedia } from "@/components/AddAnotherMedia";
 import { RERARegistration } from "@/components/RERARegistration";
 import { LocationInput } from "@/components/LocationInput";
 
-export default function DashboardLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+export default function DashboardLayout({}: Readonly<{
+  // children: React.ReactNode;
 }>) {
   return (
     <div className="flex">

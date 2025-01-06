@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+//import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export const ImageUploader = () => {
   const [uploadedImages, setUploadedImages] = useState<
@@ -39,7 +41,7 @@ export const ImageUploader = () => {
   };
 
   return (
-    <div className="p-6 w-full max-w-2xl  rounded-lg ">
+    <div className="p-6 w-full max-w-2xl rounded-lg">
       <h2 className="text-lg font-bold text-pink-500 mb-6">Upload Images</h2>
 
       {/* Drag-and-Drop Box */}
@@ -66,9 +68,11 @@ export const ImageUploader = () => {
             >
               ✕
             </button>
-            <img
+            <Image
               src={image.url}
               alt="Uploaded"
+              width={500}
+              height={500}
               className="w-full h-40 object-cover rounded-md mb-2"
             />
             <input

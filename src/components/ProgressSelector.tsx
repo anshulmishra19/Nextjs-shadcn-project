@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Progress } from "@/components/ui/progress"; // Assuming Shadcn provides a progress component
+//import { Progress } from "@/components/ui/progress"; // Assuming Shadcn provides a progress component
 import { Button } from "@/components/ui/button"; // Assuming Shadcn provides a button component
 
 export const ProgressSelector = () => {

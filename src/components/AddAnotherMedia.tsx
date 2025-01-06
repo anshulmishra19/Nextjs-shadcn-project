@@ -9,7 +9,7 @@ export const AddAnotherMedia = () => {
   const [mediaInputs, setMediaInputs] = useState<
     { id: number; platform: string; url: string }[]
   >([]);
-  const [platforms, setPlatforms] = useState<string[]>([
+  const [platforms] = useState<string[]>([
     "YouTube",
     "Facebook",
     "Twitter",
